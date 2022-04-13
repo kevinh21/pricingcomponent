@@ -25,16 +25,19 @@ function Prices() {
 
   return (
     <div>
-      <div>
-        {options.map((option) => (
-          <h2 id="options">
-            {option.name} <br />
-            {option.monthlyPrice} <br />
-            {option.features.map((feature) => (
-              <li>{feature}</li>
-            ))}
-            <div />
-          </h2>
+      <div className="optionsWrapper">
+        {options.map((option, index) => (
+          <div className="cardWrapper">
+            <br />
+            <div className="nameWrapper">
+              {option.name}
+              <h1 className="priceWrapper"> {option.monthlyPrice}</h1>
+              {option.features.map((feature) => (
+                <div className="featureWrapper">{feature}</div>
+              ))}
+            </div>
+            <button className="learnMore">LEARN MORE</button>
+          </div>
         ))}
       </div>
     </div>

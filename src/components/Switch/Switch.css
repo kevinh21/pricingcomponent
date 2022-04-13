@@ -1,3 +1,7 @@
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+}
 .react-switch-checkbox {
   height: 0;
   width: 0;
@@ -15,7 +19,7 @@
   border-radius: 100px;
   position: relative;
   transition: background-color 0.2s;
-  left: 48vw;
+  left: 46vw;
 }
 
 .react-switch-label .react-switch-button {
