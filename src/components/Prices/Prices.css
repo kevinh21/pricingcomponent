@@ -1,4 +1,5 @@
 body {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  /* flex-direction: column; */
+  margin-left: 300px;
 }

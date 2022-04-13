@@ -22,6 +22,7 @@ function Prices() {
       features: ["2 TB Storage", "10 Users Allowed", "Send up to 20 GB"],
     },
   ];
+
   return (
     <div>
       <div>
@@ -29,6 +30,9 @@ function Prices() {
           <h2 id="options">
             {option.name} <br />
             {option.monthlyPrice} <br />
+            {option.features.map((feature) => (
+              <li>{feature}</li>
+            ))}
             <div />
           </h2>
         ))}
