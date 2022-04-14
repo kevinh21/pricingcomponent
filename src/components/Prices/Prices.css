@@ -3,61 +3,74 @@
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 4%;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 28%;
+  padding-right: 28%;
+  margin-left: 20%;
+  margin-right: 30%;
 }
 
 .cardWrapper:nth-child(1) {
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(179, 208, 92);
+  box-shadow: 0px 5px 5px #898484;
   border-radius: 10px;
 }
 .cardWrapper:nth-child(2) {
-  background-color: rgb(178, 186, 235);
-  /* width: 22%; */
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   align-content: center;
-  border-style: solid;
-  border-width: 2px;
-  border-color: red;
+  border-color: rgb(125, 112, 139);
   transform: scale(1.15);
+  height: 300px;
   border-radius: 10px;
+  box-shadow: 0px 5px 5px #898484;
+  color: white;
 }
+
 .cardWrapper:nth-child(3) {
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(179, 208, 92);
-  z-index: -1;
+  box-shadow: 0px 5px 5px #898484;
   border-radius: 10px;
+  z-index: -1;
 }
 
 .nameWrapper {
-  width: 300px;
-  /* background: rgb(114, 113, 198); */
+  width: 260px;
 }
 
 .priceWrapper {
   display: flex;
   flex-direction: column;
-  /* width: 33%; */
-  /* background-color: rgb(238, 255, 0); */
 }
 
 .featureWrapper {
   display: flex;
   flex-direction: column;
-  /* width: 33%; */
-  /* background-color: rgb(87, 78, 211); */
 }
 
-.cardWrapper:nth-child(1) {
+.cardWrapper:nth-child(1) button {
   border-style: solid;
   border-width: 2px;
-  border-color: rgb(179, 208, 92);
-  border-radius: 10px;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-style: none;
+  border-radius: 3px;
+  width: 70%;
+  height: 24px;
+  margin-top: 24px;
 }
 
 .cardWrapper:nth-child(2) button {
-  background-color: rgb(21, 21, 128);
-  font-size: xx-large;
+  background-color: rgb(230, 231, 238);
+  border-style: none;
+  border-radius: 3px;
+  width: 70%;
+  height: 24px;
+  margin-top: 16px;
+}
+
+.cardWrapper:nth-child(3) button {
+  border-style: solid;
+  border-width: 2px;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-style: none;
+  border-radius: 3px;
+  width: 70%;
+  height: 24px;
+  margin-top: 24px;
 }
